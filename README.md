@@ -2,7 +2,7 @@
 
 Автоматизированные UI тесты для сайта **LitRes** с использованием **Playwright** и **pytest**.
 
-> 💡 Этот код создан в рамках курса на YouTube: [Playwright с нуля]([https://www.youtube.com/@gvargin](https://www.youtube.com/watch?v=Y7p6a5HowLU&list=PLXFaXx3Pg2MOJwUOXpfpQDcx2UJfQLS4i))  
+> 💡 Этот код создан в рамках курса на YouTube: [Playwright с нуля](https://www.youtube.com/watch?v=Y7p6a5HowLU&list=PLXFaXx3Pg2MOJwUOXpfpQDcx2UJfQLS4i)  
 
 ---
 
