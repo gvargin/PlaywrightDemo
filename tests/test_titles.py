@@ -1,12 +1,19 @@
 from playwright.sync_api import Page, expect
 
 
+# Проверка заголовка главной страницы сайта LitRes
+# Убеждаемся, что при открытии сайта отображается корректный title страницы
 def test_main_page_title(page: Page):
-    assert page.title() == "Литрес – сервис электронных и аудиокниг, скачать в fb2 и mp3, читать и слушать онлайн на Litres"
+    assert page.title() == (
+        "Литрес – сервис электронных и аудиокниг, скачать в fb2 и mp3, "
+        "читать и слушать онлайн на Litres"
+    )
 
+
+# Проверка заголовка страницы «Аудиокниги»
+# Переходим в раздел аудиокниг и проверяем title страницы
 def test_audiobook_page_title(page: Page):
     page.locator("xpath=//*[@id=\"lowerMenuWrap\"]/nav/div/a[6]").click()
-    expect(page).to_have_title("Аудиокниги – слушать онлайн или скачать в mp3 на Литрес")
-
-
-
+    expect(page).to_have_title(
+        "Аудиокниги – слушать онлайн или скачать в mp3 на Литрес"
+    )

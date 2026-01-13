@@ -1,1 +1,18 @@
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.env
+.venv/
+env/
+venv/
+
+# ------------------------
+# Playwright / Test artifacts
+# ------------------------
 /screenshot/
+/reports/
+*.html
+*.json
+*.xml
+*.log
